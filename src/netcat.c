@@ -153,6 +153,7 @@ int main(int argc, char *argv[])
   memset(&listen_sock, 0, sizeof(listen_sock));
   memset(&connect_sock, 0, sizeof(listen_sock));
   memset(&stdio_sock, 0, sizeof(stdio_sock));
+  stdio_sock.domain = PF_UNSPEC;
   listen_sock.domain = PF_INET;
   connect_sock.domain = PF_INET;
 
